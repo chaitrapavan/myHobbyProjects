@@ -14,7 +14,6 @@ newsearch.addEventListener('keypress', (event) => {
     }
 });
 
-
 //function to get weather data from openweathermap API
 
 function getWeather(citytemp) {
@@ -31,15 +30,18 @@ function getWeather(citytemp) {
             var wicon = data.weather[0].icon;
             var iconurl = "http://openweathermap.org/img/w/" + wicon + ".png";
             document.getElementById('weatherIcon').setAttribute('src', iconurl);
+        
+        }) 
+}
 
-
+            let currentData = document.querySelector('.date');
+            let now = new Date();
             currentData.textContent = getTodaysDate(now);
 
             // function to get current or todays Date
 
             function getTodaysDate(dt) {
-                let now = new Date();
-                let currentData = document.querySelector('.date');
+                
                 let months = ['January', 'february', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
                 let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
                 let day = days[dt.getDay()];
@@ -48,5 +50,3 @@ function getWeather(citytemp) {
                 let year = dt.getFullYear();
                 return `${day} ${date} ${month} ${year}`;
             }
-        })
-}
