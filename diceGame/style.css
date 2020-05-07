@@ -1,0 +1,131 @@
+body {
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 50%;
+    height: 500px;
+    display: table;
+    float: left;
+    text-align: center;
+    background-color: #141e23d9;
+}
+
+.player-0-panel {
+    display: table-cell;
+    width: 40%;
+    vertical-align: top;
+    float: left;
+    color: white;
+    height: 500px;
+}
+
+.player-1-panel {
+    display: table-cell;
+    width: 40%;
+    vertical-align: top;
+    float: right;
+    color: white;
+    height: 500px;
+}
+
+.player-name {
+    font-size: 30px;
+    margin: 45px 0px;
+    
+}
+
+.player-score {
+    font-size: 30px;
+    padding: 60px 0px;
+    
+}
+.player-current-box {
+    width: 100px;
+    height: 80px;
+    background-color: #00BCD4;
+    margin: 65px auto;
+    font-size: 20px;
+}
+
+.player-current-label {
+    margin-bottom: 15px;
+}
+
+#dice-1{
+    position: absolute;
+    height: 80px;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#dice-2{
+    position: absolute;
+    height: 80px;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+button {
+    position: absolute;
+   transform: translate(-50%);
+}
+
+.btn-new {
+    margin-top: 25px;
+    left: 50%;
+    background-color: #00BCD4;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-roll {
+    top: 60%;
+    left: 50%;
+    background-color: #00BCD4;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-hold {
+    top: 72%;
+    left: 50%;
+    background-color: #00BCD4;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;  
+}
+button i{
+    margin-right: 3px;
+}
+.active{
+    font-weight: 600;
+    background-color: #607D8B;
+}
+.chooseNum{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #00BCD4;
+}
+
