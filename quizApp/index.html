@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QUIZ</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body onload="generateRandomQun()">
+    <div class="container">
+        <div class="quizPanel">
+            <h1 class="quizname">QUIZ</h1>
+            <div id="myQuestion" class="quiz"></div>
+            <input type="button" class="optiobBtn" id="myOption0" onclick="getClickedAns(this.value)">
+            <input type="button" class="optiobBtn" id="myOption1" onclick="getClickedAns(this.value)">
+            <input type="button" class="optiobBtn" id="myOption2" onclick="getClickedAns(this.value)">
+            <p>Please Click on the option</p>
+            <button id="nextBtn" onclick="generateRandomQun()">Next</button>
+            <div class="increaseQun"><span id="countQun">0</span> / 5</div>
+        </div>
+
+        <div class="resultPanel">
+
+            <h3>Your Score: <span id="totalScores">0</span></h3>
+
+            <div class="questionAndAnswer">
+                <div class="aboutFirst">
+                    <p id="questionOne"></p>
+                    <p>Correct Answer:<span id="correctOne"></span></p>
+                    <p>Your Answer:<span id="yourAnswerOne"></span></p>
+                    <p>Your Score: <span id="newScoreOne">0</span></p>
+                </div>
+
+                <div class="aboutSecond">
+                    <p id="questionTwo"></p>
+                    <p>Correct Answer:<span id="correctTwo"></span></p>
+                    <p>Your Answer:<span id="yourAnswerTwo"></span></p>
+                    <p>Your Score: <span id="newScoreTwo">0</span></p>
+                </div>
+
+                <div class="aboutThird">
+                    <p id="questionThree"></p>
+                    <p>Correct Answer:<span id="correctThree"></span></p>
+                    <p>Your Answer:<span id="yourAnswerThree"></span></p>
+                    <p>Your Score: <span id="newScoreThree">0</span></p>
+                </div>
+
+                <div class="aboutFourth">
+                    <p id="questionForth"></p>
+                    <p>Correct Answer:<span id="correctFour"></span></p>
+                    <p>Your Answer:<span id="yourAnswerFour"></span></p>
+                    <p>Your Score: <span id="newScoreFour">0</span></p>
+                </div>
+
+                <div class="aboutFifth">
+                    <p id="questionFifth"></p>
+                    <p>Correct Answer:<span id="correctFive"></span></p>
+                    <p>Your Answer:<span id="yourAnswerFive"></span></p>
+                    <p>Your Score: <span id="newScoreFive">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
